@@ -1,0 +1,11 @@
+<h1>Enter Username and Password</h1>
+<p>Username</p>
+<input type="text" ngModel="" (ngModelChange)="data.username = $event">
+
+
+<p>Password</p>
+<input type="text" [(ngModel)]= "data.password">
+<br>
+<br>
+
+<button (click)="getUsers()">Login</button>
