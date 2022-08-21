@@ -8,12 +8,16 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component'
 import {FormsModule} from "@angular/forms";
 import { TasksComponent } from './tasks/tasks.component';
+import { RegisterComponent } from './register/register.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MainComponent,
-    TasksComponent
+    TasksComponent,
+    RegisterComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,

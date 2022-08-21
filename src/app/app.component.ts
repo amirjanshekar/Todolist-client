@@ -11,7 +11,7 @@ import {Router, Routes} from "@angular/router";
 export class AppComponent implements OnInit {
   title = 'client';
 
-  constructor(private http: HttpClient, route: Router) {
+  constructor(private http: HttpClient,private router: Router) {
   }
 
   ngOnInit(): void {

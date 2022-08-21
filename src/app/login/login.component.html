@@ -1,11 +1,22 @@
-<h1>Enter Username and Password</h1>
-<p>Username</p>
-<input type="text" ngModel="" (ngModelChange)="data.username = $event">
+<div class="container justify-content-center text-center">
+  <h1 class="text-center">Enter Username and Password</h1>
+  <div class="input-group my-3 mx-auto w-50">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="userInput">Username</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Username" [(ngModel)]="data.username"
+           aria-describedby="userInput">
+  </div>
+
+  <div class="input-group my-3 w-50 mx-auto">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Default" [(ngModel)]="data.password"
+           aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <button class="btn btn-primary" (click)="getUsers()">Login</button>
+</div>
 
 
-<p>Password</p>
-<input type="text" [(ngModel)]= "data.password">
-<br>
-<br>
-
-<button (click)="getUsers()">Login</button>
